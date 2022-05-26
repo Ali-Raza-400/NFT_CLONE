@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+
+// import ConnectWallet from './Pages/ConnectWallet';
+// import AllDrawingTools from './Pages/AllDrawingTools';
+
+// import Listnftstep2 from './Pages/Listnftstep2';
+// import Listnftstep3 from './Pages/Listnftstep3';
+// import Pooldata from './Pages/Pooldata';
+// import Nftdata from './Pages/Nftdata';
+import Menu from './Pages/Menu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <ConnectWallet /> */}
+      {/* <AllDrawingTools/> */}
+      {/* <Listnftstep2 /> */}
+      {/* <Listnftstep3 /> */}
+      {/* <Pooldata /> */}
+      {/* <Nftdata /> */}
+      <Menu />
+     
     </div>
   );
 }
