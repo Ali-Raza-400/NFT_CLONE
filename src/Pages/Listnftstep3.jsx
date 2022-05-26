@@ -82,7 +82,6 @@ function Listnftstep3() {
             </div>
           </div>
         </main>
-        <footer className="h-16 "><Footer /></footer>
       </div>
 
     </div>

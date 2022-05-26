@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 import pic0 from '../assets/030.png'
 import pic1 from '../assets/48.png'
@@ -7,9 +6,7 @@ import pic2 from '../assets/50.png'
 import pic3 from '../assets/59.png'
 import LineChart from './LineChart'
 import { UserData } from "./data";
-import pic20 from '../assets/pic20.png'
-import pic21 from '../assets/pic21.png'
-import pic12 from '../assets/pic12.png'
+
 
 function Pooldata() {
   const [userData, setUserData] = useState({
@@ -36,93 +33,93 @@ function Pooldata() {
     <div className="flex flex-col justify-between h-screen">
       <header className="h-16 "><Navbar /></header>
 
-            <h1 className='text-6xl pl-56 pt-16 '>Pool data</h1>
+      <h1 className='text-6xl pl-56 pt-16 '>Pool data</h1>
       <main className='mx-14 '>
         <div className=" main  pl-40 pt-5">
           <div>
             <div className=''>Statistic</div>
-          <div class="inline-flex rounded-md shadow-sm" role="group">
+            <div className="inline-flex rounded-md shadow-sm" role="group">
 
-<button type="button" class="py-2 px-4 text-sm font-medium text-gray-100 bg-transparent rounded-l-lg border  focus:z-10 focus:ring-2 bg-gray-900 hover:bg-yellow-300  hover:text-black">
-Profile
-</button>
+              <button type="button" className="py-2 px-4 text-sm font-medium text-gray-100 bg-transparent rounded-l-lg border  focus:z-10 focus:ring-2 bg-gray-900 hover:bg-yellow-300  hover:text-black">
+                Profile
+              </button>
 
-<button type="button" class="py-2 px-4 text-sm font-medium text-gray-100 bg-transparent rounded-l-lg border  focus:z-10 focus:ring-2 bg-gray-900 hover:bg-yellow-300  hover:text-black  ">
-Profile
-</button>
-<button type="button" class="py-2 px-4 text-sm font-medium text-gray-100 bg-transparent rounded-l-lg border  focus:z-10 focus:ring-2 bg-gray-900 hover:bg-yellow-300  hover:text-black ">
-Profile
-</button>
-</div>
+              <button type="button" className="py-2 px-4 text-sm font-medium text-gray-100 bg-transparent rounded-l-lg border  focus:z-10 focus:ring-2 bg-gray-900 hover:bg-yellow-300  hover:text-black  ">
+                Profile
+              </button>
+              <button type="button" className="py-2 px-4 text-sm font-medium text-gray-100 bg-transparent rounded-l-lg border  focus:z-10 focus:ring-2 bg-gray-900 hover:bg-yellow-300  hover:text-black ">
+                Profile
+              </button>
+            </div>
 
             <div className='w-1/2 h-3/6 mb-20 ' >
-              <LineChart  chartData={userData} />
+              <LineChart chartData={userData} />
             </div>
             <div>
 
 
-              <div class="relative overflow-x-auto shadow-md sm:rounded-lg mb-20 border-solid border-2 border-black">
+              <div className="relative overflow-x-auto shadow-md sm:rounded-lg mb-20 border-solid border-2 border-black">
                 <h1>Balances</h1>
-                <table class="w-full text-sm text-left  ">
-                  <thead class="text-xs  uppercase   ">
+                <table className="w-full text-sm text-left  ">
+                  <thead className="text-xs  uppercase   ">
                     <tr className='border-b-2 border-black'>
-                      <th scope="col" class="px-6 py-3 ">
+                      <th scope="col" className="px-6 py-3 ">
                         Product name
                       </th>
-                      <th scope="col" class="px-6 py-3">
+                      <th scope="col" className="px-6 py-3">
                         Color
                       </th>
-                      <th scope="col" class="px-6 py-3">
+                      <th scope="col" className="px-6 py-3">
                         Category
                       </th>
-                      <th scope="col" class="px-6 py-3">
+                      <th scope="col" className="px-6 py-3">
                         Price
                       </th>
 
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class=" border-b-2 border-black ">
-                      <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
+                    <tr className=" border-b-2 border-black ">
+                      <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap">
                         Apple MacBook Pro 17"
                       </th>
-                      <td class="px-6 py-4">
+                      <td className="px-6 py-4">
                         Sliver
                       </td>
-                      <td class="px-6 py-4">
+                      <td className="px-6 py-4">
                         Laptop
                       </td>
-                      <td class="px-6 py-4">
+                      <td className="px-6 py-4">
                         $2999
                       </td>
 
                     </tr>
-                    <tr class="bg-white border-b-2 border-black ">
-                      <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
+                    <tr className="bg-white border-b-2 border-black ">
+                      <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap">
                         Microsoft Surface Pro
                       </th>
-                      <td class="px-6 py-4">
+                      <td className="px-6 py-4">
                         White
                       </td>
-                      <td class="px-6 py-4">
+                      <td className="px-6 py-4">
                         Laptop PC
                       </td>
-                      <td class="px-6 py-4">
+                      <td className="px-6 py-4">
                         $1999
                       </td>
 
                     </tr>
-                    <tr class="bg-white ">
-                      <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap">
+                    <tr className="bg-white ">
+                      <th scope="row" className="px-6 py-4 font-medium  whitespace-nowrap">
                         Magic Mouse 2
                       </th>
-                      <td class="px-6 py-4">
+                      <td className="px-6 py-4">
                         Black
                       </td>
-                      <td class="px-6 py-4">
+                      <td className="px-6 py-4">
                         Accessories
                       </td>
-                      <td class="px-6 py-4">
+                      <td className="px-6 py-4">
                         $99
                       </td>
 
@@ -132,96 +129,96 @@ Profile
               </div>
 
 
-<section >
-      {/* <!-- Flex container --> */}
-      <div
-        class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
-      >
-        {/* <!-- What's Different --> */}
-        <div class="flex flex-col space-y-12 md:w-1/2 ">
-        <div className='border-2 border-black '>
-        <table class="w-1/2 text-sm text-left   ">
-                  <thead class="text-xs  uppercase   ">
-                    <tr>
-                      <th scope="col" class="px-6 py-3">
-                        Product name
-                      </th>
-                      <th scope="col" class="px-6 py-3">
-                        Color
-                      </th>
-                      <th scope="col" class="px-6 py-3">
-                        Category
-                      </th>
-                      <th scope="col" class="px-6 py-3">
-                        Price
-                      </th>
+              <section >
+                {/* <!-- Flex container --> */}
+                <div
+                  className="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row pb-10 "
+                >
+                  {/* <!-- What's Different --> */}
+                  <div className="flex flex-col space-y-12 md:w-1/2 ">
+                    <div className='border-2 border-black '>
+                      <table className="w-1/2 text-sm text-left   ">
+                        <thead className="text-xs  uppercase   ">
+                          <tr>
+                            <th scope="col" className="px-6 py-3">
+                              Product name
+                            </th>
+                            <th scope="col" className="px-6 py-3">
+                              Color
+                            </th>
+                            <th scope="col" className="px-6 py-3">
+                              Category
+                            </th>
+                            <th scope="col" className="px-6 py-3">
+                              Price
+                            </th>
 
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class=" border-y-4 ">
-                      <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
-                        Apple MacBook Pro 17"
-                      </th>
-                      <td class="px-6 py-4">
-                        Sliver
-                      </td>
-                      <td class="px-6 py-4">
-                        Laptop
-                      </td>
-                      <td class="px-6 py-4">
-                        $2999
-                      </td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className=" border-y-4 ">
+                            <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap">
+                              Apple MacBook Pro 17"
+                            </th>
+                            <td className="px-6 py-4">
+                              Sliver
+                            </td>
+                            <td className="px-6 py-4">
+                              Laptop
+                            </td>
+                            <td className="px-6 py-4">
+                              $2999
+                            </td>
 
-                    </tr>
-                    <tr class="bg-white border-b-4 ">
-                      <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
-                        Microsoft Surface Pro
-                      </th>
-                      <td class="px-6 py-4">
-                        White
-                      </td>
-                      <td class="px-6 py-4">
-                        Laptop PC
-                      </td>
-                      <td class="px-6 py-4">
-                        $1999
-                      </td>
+                          </tr>
+                          <tr className="bg-white border-b-4 ">
+                            <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap">
+                              Microsoft Surface Pro
+                            </th>
+                            <td className="px-6 py-4">
+                              White
+                            </td>
+                            <td className="px-6 py-4">
+                              Laptop PC
+                            </td>
+                            <td className="px-6 py-4">
+                              $1999
+                            </td>
 
-                    </tr>
-                    <tr class="bg-white ">
-                      <th scope="row" class="px-6 py-4 font-medium  whitespace-nowrap">
-                        Magic Mouse 2
-                      </th>
-                      <td class="px-6 py-4">
-                        Black
-                      </td>
-                      <td class="px-6 py-4">
-                        Accessories
-                      </td>
-                      <td class="px-6 py-4">
-                        $99
-                      </td>
+                          </tr>
+                          <tr className="bg-white ">
+                            <th scope="row" className="px-6 py-4 font-medium  whitespace-nowrap">
+                              Magic Mouse 2
+                            </th>
+                            <td className="px-6 py-4">
+                              Black
+                            </td>
+                            <td className="px-6 py-4">
+                              Accessories
+                            </td>
+                            <td className="px-6 py-4">
+                              $99
+                            </td>
 
-                    </tr>
-                  </tbody>
-                </table>
-        </div>
-          
-        </div>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
 
-        {/* <!-- Numbered List --> */}
-        <div class="flex flex-col space-y-2 md:w-1/2">
-        <div className='flex flex-col my-4'>
-            <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4'>Sign In</button>
-            <button className='px-8 py-3'>Sign Up</button>
-        </div>
-         
+                  </div>
 
-         
-        </div>
-      </div>
-    </section>
+                  {/* <!-- Numbered List --> */}
+                  <div className="flex flex-col space-y-2 md:w-1/2 ml-32">
+                    <div className='flex flex-col my-4'>
+                      <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4'>Sign In</button>
+                      <button className='px-8 py-3'>Sign Up</button>
+                    </div>
+
+
+
+                  </div>
+                </div>
+              </section>
 
             </div>
             <p className="text-3xl">
@@ -274,14 +271,12 @@ Profile
 
 
               <div className="mt-8">
-                {/* <!-- cards go here --> */}
               </div>
             </div>
 
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   )
 }

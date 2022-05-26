@@ -3,12 +3,13 @@ import React, {useState} from 'react';
 import ME from '../../assets/pic1.png'
 import './Navbar.css'
 import Logo from '../../assets/yellow.png'
+import {  animateScroll as scroll, } from 'react-scroll'
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import {Link} from 'react-router-dom'
+
+
 
 <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
-import { Link, animateScroll as scroll, } from 'react-scroll'
-
-
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
 function Navbar() {
   const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
@@ -25,8 +26,9 @@ function Navbar() {
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
           </a>
           <div className="flex md:order-2">
-            <button type="button" className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">Collect Wallet</button>
-            <button type="button" className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">List NFT</button>
+            <button type="button" className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"><Link to="/connectwallet">Collect Wallet</Link></button>
+            <button type="button" className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"><Link to="/listnftstep3">List NFT</Link></button>
+            <button type="button" className="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"><Link to="/">Go Back</Link></button>
             <div className='md:hidden mr-4' onClick={handleClick}>
             {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
 
