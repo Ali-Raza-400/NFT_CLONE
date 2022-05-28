@@ -11,7 +11,7 @@ import Checkbox from '../../components/checkbox'
 function Listnftstep3() {
   return (
     <div>
-      <div className="flex flex-col justify-between h-screen">
+      <div className="">
 
         <main className="mb-auto mx-60 my-16   ">
           <div className='mx-60 my-16'>
