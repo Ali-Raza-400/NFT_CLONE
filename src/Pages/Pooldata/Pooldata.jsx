@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Navbar from '../components/Navbar/Navbar'
-import pic0 from '../assets/030.png'
-import pic1 from '../assets/48.png'
-import pic2 from '../assets/50.png'
-import pic3 from '../assets/59.png'
+
+import pic0 from '../../assets/030.png'
+import pic1 from '../../assets/48.png'
+import pic2 from '../../assets/50.png'
+import pic3 from '../../assets/59.png'
 import LineChart from './LineChart'
 import { UserData } from "./data";
 
@@ -30,14 +30,14 @@ function Pooldata() {
   });
   return (
 
-    <div className="flex flex-col justify-between h-screen">
-      <header className="h-16 "><Navbar /></header>
+    <div className="">
+
 
       <h1 className='text-6xl pl-56 pt-16 '>Pool data</h1>
       <main className='mx-14 '>
         <div className=" main  pl-40 pt-5">
           <div>
-            <div className=''>Statistic</div>
+            <h1 className='text-3xl'>Statistic</h1>
             <div className="inline-flex rounded-md shadow-sm" role="group">
 
               <button type="button" className="py-2 px-4 text-sm font-medium text-gray-100 bg-transparent rounded-l-lg border  focus:z-10 focus:ring-2 bg-gray-900 hover:bg-yellow-300  hover:text-black">
@@ -52,14 +52,16 @@ function Pooldata() {
               </button>
             </div>
 
-            <div className='w-1/2 h-3/6 mb-20 ' >
-              <LineChart chartData={userData} />
-            </div>
+           <div className=' block' style={{width: '100vh'}}>
+      <LineChart chartData={userData} />
+         
+           </div>
             <div>
 
 
+
+                <h1 className='text-3xl'>Balances</h1>
               <div className="relative overflow-x-auto shadow-md sm:rounded-lg mb-20 border-solid border-2 border-black">
-                <h1>Balances</h1>
                 <table className="w-full text-sm text-left  ">
                   <thead className="text-xs  uppercase   ">
                     <tr className='border-b-2 border-black'>
@@ -130,11 +132,11 @@ function Pooldata() {
 
 
               <section >
-                {/* <!-- Flex container --> */}
+              <h1 className='text-3xl'>NFT Data</h1>
                 <div
                   className="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row pb-10 "
                 >
-                  {/* <!-- What's Different --> */}
+                
                   <div className="flex flex-col space-y-12 md:w-1/2 ">
                     <div className='border-2 border-black '>
                       <table className="w-1/2 text-sm text-left   ">
@@ -207,7 +209,7 @@ function Pooldata() {
 
                   </div>
 
-                  {/* <!-- Numbered List --> */}
+          
                   <div className="flex flex-col space-y-2 md:w-1/2 ml-32">
                     <div className='flex flex-col my-4'>
                       <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4'>Sign In</button>
@@ -233,7 +235,7 @@ function Pooldata() {
               <h4 className="font-bold pb-2 mt-12 border-b border-gray-200">some 0⨯0 Art. NFT</h4>
 
               <div className="mt-8 grid lg:grid-cols-5 gap-10">
-                {/* <!-- cards go here --> */}
+               
                 <div className="rounded bg-white border-gray-200 shadow-md overflow-hidden relative">
                   <img src={pic0} alt="stew" className="h-32 sm:h-48 w-full object-cover" />
                   <div className="m-4">
@@ -270,8 +272,7 @@ function Pooldata() {
 
 
 
-              <div className="mt-8">
-              </div>
+    
             </div>
 
           </div>

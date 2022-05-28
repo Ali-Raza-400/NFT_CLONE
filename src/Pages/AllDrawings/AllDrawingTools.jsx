@@ -1,37 +1,12 @@
 import React from 'react'
-import pic1 from '../assets/DiffGrad.png'
-import Btns from '../components/btns'
-import UploadFile from '../components/uploadFile'
-import Inputcomp from '../components/inputcomp'
+import pic1 from '../../assets/DiffGrad.png'
+import Btns from '../../components/btns'
+import UploadFile from '../../components/uploadFile'
+import Inputcomp from '../../components/inputcomp'
 import './AllDrawingTools.css'
 
 
-const Images = [
-  {
-    img: pic1,
-    checked: false,
-  },
-  {
-    img: pic1,
-    checked: false,
-  },
-  {
-    img: pic1,
-    checked: true,
-  },
-  {
-    img: pic1,
-    checked: true,
-  },
-  {
-    img: pic1,
-    checked: true,
-  },
-  {
-    img: pic1,
-    checked: true,
-  },
-]
+
 
 function AllDrawingTools() {
   return (
@@ -41,24 +16,14 @@ function AllDrawingTools() {
         <div key={1} className="flex mx-2">
           <div className='grid grid-cols-3 md:grid-col-2 gap-3'>
             <div className='mb-5'>
-              {
-                Images.splice(0, 3).map((item, index) => {
-                  return (<div style={{ position: 'relative' }}>
-                    <input style={{ position: 'absolute', bottom: '10px', right: '10px', boxShadow: 'none' }} type="checkbox" checked={item.checked}></input>
-                    <img className="rounded-t-lg mb-5" src={item.img} alt="Card Images" />
-                  </div>)
-                })
-              }
+            <img className="rounded-t-lg mb-5" src={pic1} alt="Card Images" />
+            <img className="rounded-t-lg mb-5" src={pic1} alt="Card Images" />
+            <img className="rounded-t-lg mb-5" src={pic1} alt="Card Images" />
             </div>
             <div>
-              {
-                Images.splice(3, 6).map((item, index) => {
-                  return (<div style={{ position: 'relative' }}>
-                    <input style={{ position: 'absolute', bottom: '10px', right: '10px', boxShadow: 'none' }} type="checkbox" checked={item.checked === true ? true : false}></input>
-                    <img className="rounded-t-lg mb-5" src={item.img} alt="Card Images" />
-                  </div>)
-                })
-              }
+            <img className="rounded-t-lg mb-5" src={pic1} alt="Card Images" />
+            <img className="rounded-t-lg mb-5" src={pic1} alt="Card Images" />
+            <img className="rounded-t-lg mb-5" src={pic1} alt="Card Images" />
             </div>
           </div>
           <div className='grid grid-cols-1 gap-1'>
@@ -69,7 +34,7 @@ function AllDrawingTools() {
               <div className="mb-6">
 
                 <select id="countries" className="bg-inherit border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black focus:border-black block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-black dark:focus:border-black">
-                  <option selected>Choose a country</option>
+                  <option selected>Select</option>
                   <option value="US">United States</option>
                   <option value="CA">Canada</option>
                   <option value="FR">France</option>
@@ -79,7 +44,7 @@ function AllDrawingTools() {
               <div className="mb-6">
 
                 <select id="countries" className=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black focus:border-black block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-black dark:focus:border-black">
-                  <option selected>Choose a country</option>
+                  <option selected>Select</option>
                   <option value="US">United States</option>
                   <option value="CA">Canada</option>
                   <option value="FR">France</option>

@@ -1,15 +1,18 @@
 import React from 'react'
-import Footer from '../components/Footer/Footer'
-import Navbar from '../components/Navbar/Navbar'
-import pic from '../assets/pic0.png'
-import UploadFile from '../components/uploadFile'
-import Checkbox from '../components/checkbox'
+
+
+import pic from '../../assets/pic0.png'
+import { FiUpload } from 'react-icons/fi'
+import { AiOutlineHeart } from 'react-icons/ai'
+import { AiOutlineMessage } from 'react-icons/ai'
+import { FaRetweet } from 'react-icons/fa'
+import Checkbox from '../../components/checkbox'
 
 function Listnftstep3() {
   return (
     <div>
       <div className="flex flex-col justify-between h-screen">
-        <header className="h-16 "><Navbar /></header>
+
         <main className="mb-auto mx-60 my-16   ">
           <div className='mx-60 my-16'>
             <h1 className="text-6xl">Successfully Minted!</h1>
@@ -18,15 +21,15 @@ function Listnftstep3() {
 
               <div className="flex">
                 <div className="flex items-center mr-4">
-                 <Checkbox/>
-                  
+                  <Checkbox />
+
                 </div>
                 <div className="flex items-center mr-4">
-                <Checkbox/>
-                               </div>
+                  <Checkbox />
+                </div>
                 <div className="flex items-center mr-4">
-                <Checkbox/>
-                 
+                  <Checkbox />
+
                 </div>
 
 
@@ -65,18 +68,41 @@ function Listnftstep3() {
                 <div className='space-x-4'><span >Instagram</span><span>Instagram</span><span>Instagram</span></div>
               </div>
 
-            
-              <div>
-                <label className="block text-sm font-medium text-gray-700"> Cover photo </label>
-           <UploadFile/>
-           
-              </div>
+
+              <div className='border-2'>
+                <div className='flex gap-2'>
+                  <div>
+
+                    <div class="flex items-center space-x-4">
+                      <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src={require('../../assets/pic99.avif')} alt="Bonnie image" />
+                      </div>
+                      <div class="flex-1 min-w-0">
+                        <p class="text-sm font-medium  truncate ">
+                          Bonnie Green
+                        </p>
+                        <p class="text-sm truncate ">
+                          email@windster.com
+                        </p>
+                      </div>
+                      <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                        $3467
+                      </div>
+                    </div>
+                  </div>
+                  <div className='flex gap-6'>
+
+                    <img src={pic} alt="" /><img src={pic} alt="" />
+                  </div>
+                </div>
+                <div className='w-full flex gap-6 '>
+                  <FiUpload /><AiOutlineHeart /><AiOutlineMessage /><FaRetweet /></div> </div>
               <div className='flex flex-col my-4'>
-          
-            <button className='px-8 py-3'>Sign Up</button>
-        </div>
+
+                <button className='px-8 py-3'>Sign Up</button>
+              </div>
               <div>
-                
+
               </div>
 
             </div>
